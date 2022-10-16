@@ -27,7 +27,7 @@ function createDreamTeam(members) {
   return retName*/
   let retName=''
   let arrSupl = []
-  if (members.length >0) {
+  if (Array.isArray(members)== true && members.length >0) {
     for (let i=0; i<members.length; i++) {
       if (typeof members[i] == 'string' ){
       members[i]=members[i].toUpperCase()
@@ -40,9 +40,6 @@ function createDreamTeam(members) {
   }
  
   return retName
-
-
-
 }
 
 module.exports = {
