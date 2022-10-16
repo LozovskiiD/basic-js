@@ -10,7 +10,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * For aabbbc should return 2a3bc
  *
  */
-function encodeLine(/* str */) {
+function encodeLine(parStr) {
   let retStr=''
   retOne=parStr[0] 
   kvo = 0
